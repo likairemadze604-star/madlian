@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f5eddd">
+  <meta name="description" content="MADLIANI - ჩვენი კაფის ციფრული მენიუ">
+  <title>MADLIANI | ციფრული მენიუ</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="header">
+    <a href="#" class="logo">
+      <span class="logo-symbol">♡</span>
+      <span class="logo-name">მადლიანი</span>
+      <span class="logo-en">M A D L I A N I</span>
+    </a>
+
+    <a href="#menu" class="header-link">ჩვენი მენიუ ↓</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <span class="eyebrow">WELCOME TO MADLIANI</span>
+        <h1>გემრიელი მომენტები<br>იწყება აქ</h1>
+        <p>სიყვარულით მომზადებული კერძები და ნამდვილი ქართული გემო.</p>
+        <a href="#menu" class="main-button">მენიუს ნახვა <span>→</span></a>
+      </div>
+      <div class="hero-decoration">MADLIANI</div>
+    </section>
+
+    <section class="menu-section" id="menu">
+      <div class="section-heading">
+        <span class="eyebrow">TASTE THE DIFFERENCE</span>
+        <h2>ჩვენი მენიუ</h2>
+        <p>აირჩიე სასურველი კერძი და გაეცანი ფასებს.</p>
+      </div>
+
+      <div class="menu-tools">
+        <input
+          type="search"
+          id="searchInput"
+          placeholder="🔍 მოძებნე კერძი..."
+          aria-label="კერძის ძებნა"
+          autocomplete="off"
+        >
+      </div>
+
+      <div class="category-buttons">
+        <button class="category-btn active" type="button" data-category="all" aria-pressed="true">ყველა</button>
+        <button class="category-btn" type="button" data-category="salad" aria-pressed="false">სალათები</button>
+        <button class="category-btn" type="button" data-category="garnish" aria-pressed="false">გარნირი</button>
+        <button class="category-btn" type="button" data-category="main" aria-pressed="false">ძირითადი კერძები</button>
+        <button class="category-btn" type="button" data-category="soup" aria-pressed="false">წვნიანი</button>
+      </div>
+
+      <div class="menu-grid" id="menuGrid"></div>
+
+      <p class="empty-message" id="emptyMessage" role="status" aria-live="polite" hidden>
+        ასეთი კერძი მენიუში ვერ მოიძებნა.
+      </p>
+    </section>
+
+    <section class="qr-section">
+      <div class="qr-content">
+        <span class="eyebrow">SCAN & ENJOY</span>
+        <h2>ჩვენი მენიუ ყოველთვის შენთანაა</h2>
+        <p>დაასკანერე QR კოდი და გახსენი MADLIANI-ს ციფრული მენიუ.</p>
+      </div>
+
+      <div class="qr-card">
+        <div class="qr-placeholder" id="qrPlaceholder">
+          <span>QR</span>
+          <small>მენიუს კოდი</small>
+        </div>
+        <img id="qrImage" alt="MADLIANI მენიუს QR კოდი" hidden>
+        <input
+          type="url"
+          id="websiteUrl"
+          placeholder="ჩასვი საიტის ბმული (https://...)"
+          aria-label="საიტის ბმული QR კოდისთვის"
+        >
+        <button id="generateQR" class="main-button qr-button" type="button">
+          QR კოდის შექმნა
+        </button>
+        <p id="qrMessage" class="qr-message" role="status" aria-live="polite">
+          QR კოდის შესაქმნელად ჯერ გამოაქვეყნე საიტი და ჩასვი მისი ბმული.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a href="#" class="footer-logo">MADLIANI ♡</a>
+    <p>გემო, რომელიც გახსოვს.</p>
+    <span>© 2026 MADLIANI. ყველა უფლება დაცულია.</span>
+  </footer>
+
+</body>
+</html>
